@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@font-face {
+  font-family: "gilroylight";
+  src: url("Gilroy-Light.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gilroybold";
+  src: url("Gilroy-ExtraBold.otf");
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.btn {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/pexels-prueba3.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "gilroylight";
+}
+body nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+body nav .nav-contenedor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 15%;
+  height: 75%;
+}
+body nav .nav-contenedor-img span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+body nav .nav-contenedor-opciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-size: 1.3rem;
+}
+body nav .nav-contenedor-opciones a {
+  color: white;
+  text-transform: capitalize;
+}
+body main {
+  width: 100%;
+  height: 90%;
+}
+body main .main-contenedor-principal {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  margin-left: 120px;
+  padding-top: 3rem;
+}
+body main .main-contenedor-principal h1 {
+  color: white;
+  font-family: "gilroylight", sans-serif;
+  font-size: 160px;
+  font-weight: bold;
+}
+body main .main-contenedor-principal p {
+  margin: 3rem 0;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "gilroylight", sans-serif;
+  font-weight: bold;
+}
+body main .main-contenedor-principal .btn {
+  margin: 0.2rem 0;
+  width: 14rem;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  text-transform: none;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 2px;
+} /*# sourceMappingURL=style.css.map */

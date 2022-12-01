@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(Gilroy-Light.otf);
+}
+
+$color: #1f2124;
+$color-tres: #f68657;
+$color-cuatro: #f6b352;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.cardd {
+  background: $color;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  width: calc(33.3333% - 40px);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+
+  @media (max-width: 768px) {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+  &:nth-child(2) {
+    margin: 20px 0px;
+    width: 33.3333%;
+    padding: 50px 20px;
+    @media (max-width: 768px) {
+      margin: 10px 20px;
+      width: calc(100% - 40px);
+    }
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .caracteristicas {
+    ul {
+      padding: 0;
+      margin: 20px 0 50px 0;
+      list-style-type: none;
+      li {
+        margin: 10px 0;
+        font-size: 1rem;
+        span {
+          border-bottom: 2px dotted $color-cuatro;
+        }
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    background: $color-cuatro;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    &:hover {
+      background: $color-tres;
+    }
+  }
+}
+
+.card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 9rem 3rem;
+  background-image: url("../img/pexels-modelo.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 700px;
+  margin: 20px 0;
+  border-radius: 5px;
+  transition: all 0.5s;
+  min-width: 400px;
+  min-height: 700px;
+  p,
+  h2 {
+    display: none;
+  }
+  p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    background-position: left;
+    backdrop-filter: grayscale(30%);
+    h2,
+    p {
+      display: block;
+      transition: all 0.5s;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  .main-contenedor-big {
+    width: 100%;
+    height: 100%;
+    .main-contenedor-big--img {
+      width: 100%;
+      height: 100%;
+    }
+
+    background-image: url(../img/pexels-oscar-modelo2.jpg);
+
+    background-position: center bottom;
+    background-size: cover;
+    .main-contenedor-big--img--text {
+      padding-left: 2rem;
+
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-bottom: 4rem;
+
+      h3 {
+        color: white;
+
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        span {
+          font-size: 1.6rem;
+          color: white;
+        }
+      }
+
+      .main-contenedor-big--img--text-video {
+        width: 50%;
+        height: 50%;
+
+        margin-top: 1rem;
+
+        video {
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.main-explorar {
+  padding-top: 7rem;
+  background-color: #1a1a1a;
+
+  background-position: left right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100vw;
+  height: 200vh;
+  h1 {
+    font-size: 4rem;
+    color: white;
+    padding-left: 2rem;
+    text-align: center;
+  }
+
+  .main-explorar-cards {
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+
+    .uno {
+      background-image: url("../img/pexels-modelo.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pexels-modelo.jpg");
+      }
+    }
+
+    .dos {
+      background-image: url("../img/pexels-feyza-globos.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pexels-feyza-globos.jpg");
+      }
+    }
+    .tres {
+      background-image: url("../img/foto-iglesia.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/foto-iglesia.jpg");
+      }
+    }
+    .cuatro {
+      background-image: url("../img/pexels-genaro-danza.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pexels-genaro-danza.jpg");
+      }
+    }
+
+    .cinco {
+      background-image: url("../img/river.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/river.jpg");
+      }
+    }
+
+    .seis {
+      background-image: url("../img/pixebay-crater.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pixebay-crater.jpg");
+      }
+    }
+
+    .siete {
+      background-image: url("../img/pixebay-presa.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pixebay-presa.jpg");
+      }
+    }
+
+    .ocho {
+      background-image: url("../img/pixebay-playa.jpg");
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/pixebay-playa.jpg");
+      }
+    }
+  }
+}
+
+.main-precios {
+  background-color: #1a1a1a;
+
+  background-position: center;
+  background-size: cover;
+}

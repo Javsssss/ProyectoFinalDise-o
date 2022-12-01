@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quienes somos?</title>
+    <link rel="stylesheet" href="css/quienes-somos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body>
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="img/mariposa.jpeg" alt="" />
+      </div>
+
+      <div class="description">
+        <p>
+          Somos Nature Tour, orgullosamente Michoacanos, nuestra misión es
+          brindarte la mejor experiencia para visitar Michoacan.
+        </p>
+        <p>
+          Dedicados y especializados a dar los mejores recorridos en nuestro
+          estado, por los lugares mas emblemáticos de nuestro estado, desde las
+          mariposas Monarca, hasta nuestras hermosas playas, monumentos
+          históricos, y patrimonios de la humanidad.
+        </p>
+        <p>
+          ¡Haremos que te enamores de nuestro estado! Ven, conócenos, no te
+          arrepentirás.
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Paises que nos recomiendan</h3>
+          <div class="project-number odometer websites-designed">0</div>
+        </div>
+
+        <div class="project">
+          <h3 class="project-name">World Travel Awards</h3>
+          <div class="project-number odometer apps-developed">0</div>
+        </div>
+      </div>
+
+      <h2 class="our-team-heading">Nuestro Equipo</h2>
+
+      <div class="our-team">
+        <div class="team-member">
+          <img src="img/javi.png" alt="" />
+          <div class="designation">
+            <strong>Javier González</strong> (Project Manager)
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="img/evers.png" width="712px" height="437px" />
+          <div class="designation">
+            <strong>Everardo Espinoza</strong> (Lead Programmer)
+          </div>
+        </div>
+      </div>
+
+      <div class="our-mission">
+        <img class="quote-icon" src="img/quote-icon.png" alt="" />
+        <p>Nuestra misión es brindarte la mejor experiencia del mundo.</p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+    <script>
+      const websitesDesigned = document.querySelector(".websites-designed");
+      const appsdeveloped = document.querySelector(".apps-developed");
+
+      setTimeout(() => {
+        websitesDesigned.innerHTML = "43";
+        appsdeveloped.innerHTML = "15";
+      }, 400);
+    </script>
+  </body>
+</html>
